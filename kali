@@ -1,0 +1,19 @@
+(1). 패스워드 변경
+passwd
+(2). 업데이트/한글 설치
+apt-get update
+apt-get -y install fonts-nanum
+apt-get -y install nabi im-switch
+im-config -s nabi
+im-config -c
+# 설정창에서 hangul을 선택하고 OK를 누르자
+# 재부팅 후 shift+spaxe로 한영 전환가능
+++) 또는 
+sudo apt install -y fcitx-lib*
+sudo apt install -y fcitx-hangul
+sudo apt install -y fonts-nanum*
+sudo reboot
+(3). 크롬 설치
+dpkg -i google-chrome-stable~~
+vi /usr/bin/google-chrome-stable
+# vi 접속후 맨밑에 --no-sandbox --user-data-dir을 추가하자
